@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,600;1,200;1,300;1,600;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(6, 7, 61);
+  color: #181313c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffffc0;
+  margin-top: 15%;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.container h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(6, 7, 61);
+}
+
+blockquote {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+}
+
+.container span {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+  color: rgb(6, 7, 61);
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.container span::before {
+  content: "---";
+  margin-right: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px auto 0;
+}
+
+.buttons button {
+  border: 0;
+  padding: 10px;
+  border-radius: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background-color: rgb(6, 7, 61);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+  transition: all 0.2s ease-in;
+}
+.buttons button:nth-child(2) {
+  background-color: #fff;
+  color: rgb(6, 7, 61);
+  font-size: 16px;
+  font-weight: 600;
+  outline: 1px solid rgb(6, 7, 61);
+  transition: all 0.2s ease-out;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.buttons button:nth-child(1):hover {
+  background-color: #fff;
+  color: rgb(6, 7, 61);
+  font-size: 16px;
+  font-weight: 600;
+  outline: 1px solid rgb(6, 7, 61);
+}
+
+.buttons button:nth-child(2):hover {
+  background-color: rgb(6, 7, 61);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+}
